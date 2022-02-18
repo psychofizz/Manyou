@@ -64,6 +64,23 @@ define config.has_voice = True
 
 # define config.main_menu_music = "main-menu-theme.ogg"
 
+#font
+define gui.text_font = "ja-jp.ttf"
+define gui.interface_text_font = "ja-jp.ttf"
+
+
+#colors 
+define gui.accent_color = u'#ddb947'
+
+#styling code for the text box
+define gui.name_xpos = 0.5
+define gui.name_xalign = 0.5
+
+define gui.name_text_size = 35
+
+define gui.dialogue_xpos = 0.5
+define gui.dialogue_text_xalign = 0.5
+define gui.textbox_height = 260
 
 ## Transitions #################################################################
 ##

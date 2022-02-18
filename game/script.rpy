@@ -3,7 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
+define kaz = Character("Kaedehara Kazuha")
 
 
 # The game starts here.
@@ -14,21 +14,25 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
+    scene background liyue
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show eileen happy
+    show kazuhastill: 
+        xalign 0.8
+        yalign 0.5
+        zoom 0.5
+        
 
     # These display lines of dialogue.
 
-    e "You've created a new Ren'Py game."
+    kaz "Solitary cloud"
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    kaz "Shadow in the setting sun"
 
-    e "get fucked"
+    kaz "Stirs the drifters's heart."
 
     # This ends the game.
 

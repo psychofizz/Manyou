@@ -1,0 +1,39 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+Compiling ATL code at game/script.rpy:24
+  File "game/script.rpy", line 23, in script
+    show kazuhastill:
+NameError: name 'rightish' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 23, in script
+    show kazuhastill:
+  File "C:\Users\psychofizz\Downloads\renpy-7.4.11-sdk/renpy/ast.py", line 1197, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\psychofizz\Downloads\renpy-7.4.11-sdk/renpy/ast.py", line 1167, in show_imspec
+    atl=atl)
+  File "C:\Users\psychofizz\Downloads\renpy-7.4.11-sdk/renpy/exports.py", line 768, in show
+    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
+  File "C:\Users\psychofizz\Downloads\renpy-7.4.11-sdk/renpy/display/core.py", line 1147, in add
+    thing.visit_all(lambda d : None)
+  File "C:\Users\psychofizz\Downloads\renpy-7.4.11-sdk/renpy/display/core.py", line 558, in visit_all
+    for d in self.visit():
+  File "C:\Users\psychofizz\Downloads\renpy-7.4.11-sdk/renpy/atl.py", line 603, in visit
+    block = self.compile()
+  File "C:\Users\psychofizz\Downloads\renpy-7.4.11-sdk/renpy/atl.py", line 510, in compile
+    block = self.atl.compile(self.context)
+  File "C:\Users\psychofizz\Downloads\renpy-7.4.11-sdk/renpy/atl.py", line 705, in compile
+    statements = [ i.compile(ctx) for i in self.statements ]
+  File "C:\Users\psychofizz\Downloads\renpy-7.4.11-sdk/renpy/atl.py", line 957, in compile
+    value = ctx.eval(expr)
+  File "C:\Users\psychofizz\Downloads\renpy-7.4.11-sdk/renpy/atl.py", line 260, in eval
+    return eval(expr, renpy.store.__dict__, self.context) # @UndefinedVariable
+  File "<string>", line 1, in <module>
+NameError: name 'rightish' is not defined
+
+Windows-10-10.0.22000
+Ren'Py 7.4.11.2266
+Manyou 1.0
+Thu Feb 17 23:53:57 2022
